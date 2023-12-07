@@ -22,15 +22,22 @@ Route::get('/login', function () {
 Route::get('/shop', function () {
     // tramite array associativo passo i dati alla pagina shop
     $data= [
-        'art' => 'pantalone',
+        'arts' => ['pantalone','T-shirt','calzini','scarpe','televisori'],
         'taglia' => 'M'
     ];
     
     return view('shop',$data);
 });
 Route::get('/aboutUs', function () {
-    return view('aboutUs');
+
+    $name= 'pippo';
+    $name2= 'paperino';
+    return view('aboutUs',compact("name","name2"));
 });
 Route::get('/contact', function () {
     return view('contact');
+});
+
+Route::get('/test', function () {
+    return view('myhome');
 });

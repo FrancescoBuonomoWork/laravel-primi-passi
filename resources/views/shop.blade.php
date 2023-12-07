@@ -9,11 +9,11 @@
     <div>
         <div class="container">
             <h1>shop</h1>
-
-
             <div>
                 <ul>
-                    <li>{{ $art}}</li>
+                    @foreach($arts as $art)
+                        <li>{{ $art }}</li>
+                    @endforeach
                     <li>{{ $taglia}}</li>
                 </ul>
             </div>
