@@ -9,6 +9,14 @@
     <div>
         <div class="container">
             <h1>shop</h1>
+
+
+            <div>
+                <ul>
+                    <li>{{ $art}}</li>
+                    <li>{{ $taglia}}</li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>

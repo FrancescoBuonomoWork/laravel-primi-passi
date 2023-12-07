@@ -20,7 +20,13 @@ Route::get('/login', function () {
     return view('login');
 });
 Route::get('/shop', function () {
-    return view('shop');
+    // tramite array associativo passo i dati alla pagina shop
+    $data= [
+        'art' => 'pantalone',
+        'taglia' => 'M'
+    ];
+    
+    return view('shop',$data);
 });
 Route::get('/aboutUs', function () {
     return view('aboutUs');
