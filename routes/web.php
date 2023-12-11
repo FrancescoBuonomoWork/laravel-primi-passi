@@ -27,7 +27,7 @@ Route::get('/shop', function () {
     ];
     
     return view('shop',$data);
-});
+})->name('shop');
 Route::get('/aboutUs', function () {
 
     $name= 'pippo';

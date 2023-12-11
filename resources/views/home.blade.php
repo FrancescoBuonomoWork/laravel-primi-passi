@@ -11,7 +11,7 @@
             <nav>
                 <ul>
                     <li><a href="#">home</a></li>
-                    <li><a href="/shop">shop</a></li>
+                    <li><a href="{{ route('shop') }}">shop</a></li>
                     <li><a href="/aboutUs">about us</a></li>
                     <li><a href="/contact">contact</a></li>
                     <li><a href="/login">login</a></li>
